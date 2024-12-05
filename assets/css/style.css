@@ -1,0 +1,147 @@
+/* Corps principal */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cv-container {
+    width: 1160px;
+    background-color: #800000;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* En-tête */
+.header {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: zoom-in; /* Pointeur zoom au survol */
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1); /* Zoom léger au survol */
+}
+
+/* Bande noire */
+.black-bar {
+    background-color: #000;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.personal-info {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.personal-link {
+    color: #d4a374;
+    text-decoration: none;
+}
+
+.personal-link:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+/* Contenu principal */
+.content {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.left-column {
+    flex: 1;
+    background-color: #732727;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.right-column {
+    flex: 2;
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 10px;
+    position: relative;
+    transition: border-right 0.3 ease;
+}
+
+.section h3 {
+    background-color: #d4a374;
+    color: black;
+    padding: 5px 10px;
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.section:hover {
+    border-right: 5px solid #800000; /* Trait bordeaux à droite au survol */
+}
+
+.about p, .languages ul, .interests ul {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.languages ul, .interests ul {
+    padding-left: 20px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills ul li {
+    margin-bottom: 5px;
+}
+
+/* Icônes Réseaux Sociaux */
+.icons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: opacity 0.3s ease;
+}
+
+.icons img:hover {
+    opacity: 0.7; /* Réduction de l'opacité au survol */
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #ccc;
+}
